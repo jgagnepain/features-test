@@ -9,9 +9,9 @@ export const useImageDownloadSpeed = (
 ): number | null => {
   const [speed, setSpeed] = useState<number | null>(null);
 
-  const getSpeedInMbps = (start: number, end: number, size: number) => {
-    const timeDuration = (end - start) / 1000;
-    const speedInKbps = size / timeDuration;
+  const getSpeedInMbps = (start: number, end: number, sizeInKbs: number) => {
+    const timeDuration = (end - start) / 1000; // get time in seconds
+    const speedInKbps = sizeInKbs / timeDuration;
     return speedInKbps / 1000;
   };
 

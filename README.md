@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Features tests in preparation for projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this repo is to experiment with different solutions to problems we foresee could be encountered as we tackle other projects in the future.
+
+## Features under consideration
+
+### Displaying network status and speed
+
+A few approaches are being tested:
+
+- Displaying the native window.navigator.onLine prop as a boolean indication of whether the device is connected to the internet.
+  This works and [https://caniuse.com/?search=window.navigator](is supported by most browsers).
+- Displaying the navgator.connection.downlink prop as the download speed in Mb/s
+  This is [https://caniuse.com/?search=navigator.connection](not supported by all browsers).
+  However, on Chrome, as we throttle the connection through developer tools, we see that this dosnload speed is accurately affected and reads as the expected download speed for the connection type selected.
+- Attempting to download an image of known size and tracking the amount of time the download took to calculate the download speed.
+  This does not proove to be very accurate. The numbers that result from the calculation are not even close to the expected download speed value as indicated by navgator.connection.downlink. The result varies widely depending on the browser. Throttling the connection doesnt seem to have much of an effect.
+  This was tested with 3 image sizes to see if there was an optimal size to chose.
+
+---
+
+Create React App information:
 
 ## Available Scripts
 
