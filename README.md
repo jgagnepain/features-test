@@ -17,8 +17,7 @@ A few approaches are being tested:
   This does not proove to be very accurate. The numbers that result from the calculation are not even close to the expected download speed value as indicated by navgator.connection.downlink. The result varies widely depending on the browser. Throttling the connection doesnt seem to have much of an effect.
   This was tested with 3 image sizes to see if there was an optimal size to chose.
 
-<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/baa1c38f9f7747eb9f1554f2fb7bdceb" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
+[https://www.loom.com/share/baa1c38f9f7747eb9f1554f2fb7bdceb](Demo video of test here)
 ---
 
 Create React App information:
