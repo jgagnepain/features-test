@@ -16,8 +16,9 @@ A few approaches are being tested:
 - Attempting to download an image of known size and tracking the amount of time the download took to calculate the download speed.
   This does not proove to be very accurate. The numbers that result from the calculation are not even close to the expected download speed value as indicated by navgator.connection.downlink. The result varies widely depending on the browser. Throttling the connection doesnt seem to have much of an effect.
   This was tested with 3 image sizes to see if there was an optimal size to chose.
-
+  
 [https://www.loom.com/share/baa1c38f9f7747eb9f1554f2fb7bdceb](Demo video of test here)
+
 ---
 
 Create React App information:
